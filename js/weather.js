@@ -13,7 +13,7 @@ const showWeather = async (lat, lng) => {
 }
 
 navigator.geolocation.getCurrentPosition((position) => {
-  showWeather(position.coords.lat, position.coords.longitude);
+  showWeather(position.coords.latitude, position.coords.longitude);
 }, () => {
   alert("Can't get your location. Display SEOUL's weather");
 
