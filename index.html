@@ -3,10 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Momentum</title>
   </head>
   <body>
+    <!-- Clock -->
     <h2 id="clock">-:-:-</h2>
+
+    <!-- Login (Greeting) -->
+    <form id="loginForm" class="hidden">
+      <input id="usernameInput" type="text" placeholder="What's your name?" maxlength="15" required />
+      <input type="submit" value="Login" />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+
     <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
   </body>
 </html>
