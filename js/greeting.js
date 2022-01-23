@@ -16,6 +16,8 @@ const handleLogin = (event) => {
   localStorage.setItem(USERNAME_KEY, username);
   showGreeting(username);
   loginForm.classList.add(HIDDEN_CLASSNAME);
+  
+  usernameInput.value = "";
 };
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
